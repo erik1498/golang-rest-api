@@ -7,6 +7,6 @@ import (
 
 type Kelas struct {
 	gorm.Model
-	ID              uuid.UUID `gorm:"type:uuid"`
+	ID              uuid.UUID `gorm:"type:char(36);primary_key"`
 	Name, WaliKelas string
 }
